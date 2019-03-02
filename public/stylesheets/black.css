@@ -1,0 +1,281 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff;
+}
+
+iframe {
+  width: 100%;
+}
+
+.botui-app-container {
+  /* margin-top: 40px; */
+  width: 60%;
+  height: 500px;
+}
+
+.botui-container {
+  background-color: #fff;
+  height: 95vh;
+  background: url(http://gdurl.com/QIq7) no-repeat;
+  background-position: 50% 0%;
+}
+.botui-message-content {
+	font-size:1.2em;
+  color: #172444;
+  background-color: #fff;
+}
+
+.botui-message-content.human {
+  background-color: #3498DB;
+}
+
+.botui-actions-text-input {
+  color: #FFFFFF;
+  border-bottom: 1px solid #3498DB;
+  margin: 0;
+}
+
+.botui-actions-buttons-button {
+  line-height: 1 !important;
+  background-color: #3498DB;
+}
+
+.botui-message-content-link {
+  color: #F1C40F;
+}
+
+.botui-messages-container {
+  /* padding: 30px 0px; */
+}
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius:4px;  
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+
+.botui-messages-container {
+    padding: 0px 20px;
+}
+
+button.botui-actions-buttons-button, input.botui-actions-text-input {
+	color:#000 !important;
+}
+
+input.botui-actions-text-input{
+	width:100%;
+}
+
+.fa {
+    display: none !important;
+}
+
+.botui-message-content.human {
+    background-color: #172444;
+	color:#fff;
+}
+
+button.botui-actions-buttons-button:not(:last-child) {
+    margin-right: 10px;
+    color: #fff !important;
+    background: #172444;
+}
+
+button.botui-actions-buttons-button{
+    color: #fff !important;
+    background: #172444;
+}
+
+
+
+
+
+.logo{
+            text-align: center
+        }
+        .logoimg{
+            width:15%;
+        }
+
+        #chat {
+            width: 50%;
+            /* height: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); */
+            border-radius: 8px;
+            background-color: transparent;
+            border: none;
+            transition: all 1000ms;
+        }
+
+        #chatstart {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-color: white;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 8px;
+            opacity: 1;
+            animation: chatstartAnimation 10000ms;
+            overflow: hidden;
+        }
+
+.ocean {
+            height: 5%;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            border: 1px solid #182542;
+            background: #182542;
+        }
+
+        .wave {
+            background: url(http://gdurl.com/o7XH) repeat-x;
+            position: absolute;
+            top: -198px;
+            width: 6400px;
+            height: 198px;
+            animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+            transform: translate3d(0, 0, 0);
+        }
+
+        .wave:nth-of-type(2) {
+            top: -175px;
+            animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
+            opacity: 1;
+        }
+
+        @keyframes wave {
+            0% {
+                margin-left: 0;
+            }
+
+            100% {
+                margin-left: -1600px;
+            }
+        }
+
+        @keyframes swell {
+
+            0%,
+            100% {
+                transform: translate3d(0, -25px, 0);
+            }
+
+            50% {
+                transform: translate3d(0, 5px, 0);
+            }
+        }
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+	.botui-app-container {
+		/* margin-top: 40px; */
+		width: 100%;
+		height: 500px;
+	}
+	
+	input.botui-actions-text-input {
+		width: 75%;
+	}
+	
+	.botui-actions-text-submit {
+		color: #fff;
+		padding: .5rem;
+		height: auto;
+		width: auto;
+		font-size: 1.2em;
+		line-height: 1;
+		border-radius: 4px;
+		border: 1px solid #919292;
+		background: #777979;
+	}
+	
+	.logoimg {
+		width: 45%;
+	}
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+	.botui-app-container {
+		/* margin-top: 40px; */
+		width: 100%;
+		height: 500px;
+	}
+	
+	input.botui-actions-text-input {
+		width: 75%;
+	}
+	
+	.botui-actions-text-submit {
+		color: #fff;
+		padding: .5rem;
+		height: auto;
+		width: auto;
+		font-size: 1.2em;
+		line-height: 1;
+		border-radius: 4px;
+		border: 1px solid #919292;
+		background: #777979;
+	}
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+	.botui-app-container {
+		/* margin-top: 40px; */
+		width: 100%;
+		height: 500px;
+	}
+	
+	input.botui-actions-text-input {
+		width: 100%;
+	}
+	
+	.botui-actions-text-submit {
+		color: #fff;
+		padding: .5rem;
+		height: auto;
+		width: auto;
+		font-size: 1.2em;
+		line-height: 1;
+		border-radius: 4px;
+		border: 1px solid #919292;
+		background: #777979;
+	}
+	
+	.logoimg {
+		width: 45%;
+	}
+}

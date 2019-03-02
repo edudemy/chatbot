@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title><%=title%></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/botui/build/botui.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/botui/build/botui-theme-default.css" />
+    <link rel="stylesheet" href="../public/stylesheets/black.css" />
+    <link rel="stylesheet" href="../public/stylesheets/style.css" />
+	
+    <%# Custom StyleSheet for Black Color (Totally Optional)%>
+    <link rel="stylesheet" href="stylesheets/black.css" />
+	
+	
+	<script>
+        setTimeout(function(){
+            document.getElementById('chatstart').style.display='none';
+        },5000);
+
+        setTimeout(function(){
+            document.getElementById('typingAlert').style.display='none';
+        },5500);
+
+        // setTimeout(function(){
+        //     document.getElementById('chat').style.display='flex';
+        // }, 6000);
+    </script>
+	
+  </head>
+  <body>
+      <%# Bot Declaration%>
+    <div class="botui-app-container" id="api-bot">
+      <bot-ui></bot-ui>
+	  
+	  
+	  
+	  <div id="chatstart">
+                <div class="logo">
+                    <img class="logoimg" src='http://gdurl.com/fcNv' alt="">
+                </div>
+                <div>
+                    <div class="ocean">
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+                    </div>
+                </div>
+       </div>
+	  
+	  
+    </div>
+
+    <%# JS STUFF%>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+    <script src="https://cdn.jsdelivr.net/vue/latest/vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/botui/build/botui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/botui/build/botui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <%# Edit the Conversation from Convo.js%>
+    <script src="javascripts/convo.js"></script>
+    <script src="javascripts/socket.js"></script>
+  </body>
+</html>
